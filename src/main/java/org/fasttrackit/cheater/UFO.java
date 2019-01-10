@@ -19,6 +19,12 @@ public class UFO extends Vehicle {
     public void concealCheating() {
 
         System.out.println("I`m not cheating!");
+
+    }
+
+    public UFO clone () {
+        return new UFO();
+
     }
 
 

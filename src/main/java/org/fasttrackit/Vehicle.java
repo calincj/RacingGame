@@ -24,12 +24,17 @@ public class Vehicle {
     }
 
     //example of invoking overloaded methods
-    public double accelerate (double speed) {
+    public double accelerate(double speed) {
 
         return accelerate(speed, 1);
-
-
     }
+
+    protected Vehicle clone() {
+        Vehicle vehicle = new Vehicle();
+        //copy properties from curent object or simply call this.clone();
+        return vehicle;
+    }
+
     public String getName() {
         return name;
     }
