@@ -58,6 +58,15 @@ public class App
         vehicle2.accelerate(130, 1);
         new UFO().accelerate(130, 1);
 
+        //An object can take multiple forms
+
+        Vehicle ufo = new UFO();
+        //The type of the variable does NOT determine the object`s behaviour
+        ufo.accelerate(200, 2);
+
+        //We might need type casting (see below)
+        //casting
+        ((UFO) ufo).concealCheating();
 
 
     }

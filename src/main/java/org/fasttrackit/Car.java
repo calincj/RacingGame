@@ -9,6 +9,10 @@ public class Car extends AutoVehicle {
         super(engine);
     }
 
+    public Car() {
+        super();
+    }
+
     @Override
     public String toString() {
         return "Car{" +
