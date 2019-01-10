@@ -4,9 +4,9 @@ import java.time.LocalDateTime;
 
 public class Engine {
 
-    private String manufacturer;
-    private double capacity;
-    private LocalDateTime expiryDate;
+    String manufacturer;
+    double capacity;
+    LocalDateTime expiryDate;
 
 
 

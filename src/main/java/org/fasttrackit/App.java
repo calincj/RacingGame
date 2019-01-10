@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import org.fasttrackit.cheater.UFO;
+
 import java.time.LocalDateTime;
 
 /**
@@ -10,15 +12,17 @@ public class App
 {
     public static void main( String[] args )
     {
-//        Engine engine = new Engine();
-//        engine.manufacturer = "Renault";
-//        engine.capacity = 1500;
-//        Car car = new Car(engine);
-//        car.setName("Dacia");
-//        car.setColor("White");
-//        car.doorCount = 4;
-//        car.setMileage(7.5);;
-//        car.running = true;
+        Engine engine = new Engine();
+        engine.manufacturer = "Renault";
+        engine.capacity = 1500;
+        Car car = new Car(engine);
+        car.setName("Dacia");
+        car.setColor("White");
+        car.doorCount = 4;
+        car.setMileage(7.5);;
+        car.running = true;
+
+        System.out.println (car.toString());
 //
 //        double carTravelDistance = car.accelerate(100, 2);
 //
@@ -51,7 +55,8 @@ public class App
 
         //example of invoking overloaded methods
         vehicle1.accelerate(40);
-        vehicle2.accelerate(99, 1);
+        vehicle2.accelerate(130, 1);
+        new UFO().accelerate(130, 1);
 
 
 

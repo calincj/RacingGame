@@ -18,7 +18,7 @@ public class Vehicle {
         System.out.println(name + " accelerated with " + speed + " 100 km/h for " + durationInHours + " hours. ");
         double travelDistance = speed * durationInHours;
 
-        System.out.println("Travel distance");
+        System.out.println("Travel distance" + travelDistance);
 
         return travelDistance;
     }
@@ -27,6 +27,7 @@ public class Vehicle {
     public double accelerate (double speed) {
 
         return accelerate(speed, 1);
+
 
     }
     public String getName() {
@@ -51,5 +52,14 @@ public class Vehicle {
 
     public void setMileage(double mileage) {
         this.mileage = mileage;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", mileage=" + mileage +
+                '}';
     }
 }
