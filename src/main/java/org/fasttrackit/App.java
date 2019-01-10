@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -48,6 +48,11 @@ public class App
         //System.out.println("Value from vehicle 1: "+ vehicle1.vehicleCount);
         //System.out.println("Value from vehicle 2: "+ vehicle2.vehicleCount);
         System.out.println("Value from vehicle Class: "+ Vehicle.vehicleCount);
+
+        //example of invoking overloaded methods
+        vehicle1.accelerate(40);
+        vehicle2.accelerate(99, 1);
+
 
 
     }
